@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* PAGE BACKGROUND */
+.page-bg {
+  min-height: 100vh;
+  background: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN CARD */
+.main-card {
+  width: 95%;
+  background: #fff;
+  border-radius: 30px;
+  padding: 60px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
+}
+
+/* WRAPPER */
+.wrapper {
+  display: flex;
+  height: 600px;
+}
+
+/* LEFT */
+.left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  color: #e63946;
+  font-weight: bold;
+}
+
+.left h1 {
+  font-size: 46px;
+  margin: 20px 0;
+}
+
+.left h1 span {
+  color: #e63946;
+}
+
+.desc {
+  color: #666;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.primary {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.secondary {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 12px 28px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* MINI CARDS */
+.mini-cards {
+  display: flex;
+  gap: 18px;
+  margin-top: 45px;
+}
+
+.mini-card {
+  background: #fff;
+  width: 150px;
+  padding: 16px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.mini-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.mini-card h4 {
+  font-size: 14px;
+}
+
+.mini-card p {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.mini-card button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+/* RIGHT */
+.right {
+  width: 500%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* SEMI-CIRCLE BG */
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: radial-gradient(circle at right, #f3f3f3 55%, transparent 56%);
+}
+
+/* FOOD */
+.food {
+  position: absolute;
+  right: 140px;
+  top: 50%;
+  transition: all 0.9s ease;
+}
+
+.food img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+}
+
+.food.center {
+  transform: translate(0, -50%) scale(1.25);
+  z-index: 3;
+}
+
+.food.next {
+  transform: translate(140px, -240px) scale(0.7);
+  opacity: 0.6;
+}
+
+.food.prev {
+  transform: translate(140px, 240px) scale(0.6);
+  opacity: 0.4;
+}
+
+.food.hidden {
+  opacity: 0;
+}
+
+/* CONTROLS */
+.controls {
+  position: absolute;
+  bottom: 80px;
+  right: 240px;
+  display: flex;
+  gap: 20px;
+}
+
+.controls button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  font-size: 26px;
+  cursor: pointer;
+}
